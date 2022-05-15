@@ -1,0 +1,35 @@
+/* reset */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+/* layout */
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* design */
+.header {
+    padding: 100px 0;
+}
+
+.header-title {
+    font-size: 60px;
+    font-weight:bolder;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    padding: 20px 0;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
