@@ -1,5 +1,5 @@
 /* reset */
-body, h1, h2 {
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -14,16 +14,33 @@ body {
 }
 /* layout */
 .wrap {
-    width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
+.mt-auto {
+    margin-top: auto;
+}
 /* design */
+body {
+    background-color: #ddd;
+}
+
 .header {
     padding: 100px 0;
+    background-image: url(./images/insideout-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-title {
+    max-width: 1000px;
+    margin: 0 auto;
     font-size: 60px;
     font-weight:bolder;
     letter-spacing: 0.2em;
@@ -32,4 +49,80 @@ body {
     color: white;
     background-color: red;
     text-align: center;
+}
+/* info */
+.info {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    min-height: 300px;
+}
+
+.info.align_right {
+    flex-direction: row-reverse;    
+}
+
+.info-inside {
+    padding: 20px;
+}
+
+.info-inside.right {
+    text-align: right;
+}
+
+.info img {
+    width: 200px;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 30px;
+}
+
+.info-inside-title {
+    margin: 20px 0 40px;
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    display: inline-block;
+    position: relative;
+}
+
+.info-inside-title::before {
+    content:  " ";
+    position: absolute;
+    right: 5px;
+    left: 5px;
+    bottom: -10px;
+    height: 15px;
+    border-radius: 20px;
+}
+
+.info-inside-title.joy {
+    color: orange;
+}
+.info-inside-title.sad {
+    color: dodgerblue;
+}
+.info-inside-title.anger {
+    color: red;
+}
+
+.info-inside-title.joy::before {
+    background-color: palevioletred;
+}
+.info-inside-title.sad::before {
+    background-color: skyblue;
+}
+.info-inside-title.anger::before {
+    background-color: yellow;
+}
+
+.info-inside-contents {
+    color: #999;
+    letter-spacing: 1;
+    text-indent: 1;
+    line-height: 1.4;
 }
